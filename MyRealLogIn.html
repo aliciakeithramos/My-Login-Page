@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Login Page</title> <!--Defines title of the webpage-->
+    <link rel="stylesheet" href="styletry.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="login-container"> <!--This ends the container that holds the login box-->
+        <!--div>-creates a division or section in webpage
+        class="login-container"-Assigns the name login-container to this division-->
+
+       <div class="content-left">
+        <h1>TANGLED</h1>
+        <p>Your magical journey starts here.</p>
+       </div>
+
+        <div class="login-box">
+            <h2>Welcome!</h2>
+            <p>Want to watch Tangled? Log in to continue.</p>
+            
+            <br>
+            
+            <form action="#" method="POST"> <!--collects information entered by user-->
+
+                <div class="input-group">
+                    <label for="username"><i class="fa-solid fa-envelope email"></i>Email or Username</label>
+                    <input type="text" id="username" placeholder="e.g: Kurtzayn@gmail.com" required>
+                </div>
+                
+
+                <div class="input-group"> <!--class="input-group" allows CSS to style the group-->
+                    <label for="password"><i class="fa-solid fa-lock lock"></i> Password</label> <!--Creates a text label for an input field.-->
+                    <input type="password" id="password" placeholder="Enter password" required> 
+                    <!--input-creates an input field
+                    type="password"-hides the characters entered by the user
+                    id="password"-uniquely identifies the password field
+                    placeholder="Password"-display a guide inside the field-->
+                </div>
+
+                <div class="remember-me">
+                    <div class="left">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button type="submit">Log In</button>
+
+                <div class="footer">
+                    <div class="b">
+                        <p>Don't have an account?</p>
+                    </div>
+                    <a href="#">Register</a>
+                </div>
+                    
+            </form>
+        </div>
+    </div>
+</body>
+</html>
